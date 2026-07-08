@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uncut Studio | Apps without noise</title>
+  <meta name="description" content="Uncut Studio crea apps simples, cuidadas y directas para iPhone y Android." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Uncut Studio Home">
+      <img src="assets/uncut-studio-logo.png" alt="Uncut Studio" />
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="#work">Apps</a>
+      <a href="#studio">Studio</a>
+      <a href="#process">Proceso</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" data-section>
+      <div class="hero-copy">
+        <p class="eyebrow">Indie app studio · iOS · Android</p>
+        <h1>Apps claras, rápidas y sin relleno.</h1>
+        <p class="hero-text">
+          Uncut Studio crea pequeñas herramientas digitales con una idea simple:
+          menos ruido, más utilidad y una experiencia que apetece abrir cada día.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">Ver apps</a>
+          <a class="button ghost" href="#contact">Hablemos</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Tarjeta de marca Uncut Studio">
+        <div class="card-topline"></div>
+        <img src="assets/uncut-studio-logo.png" alt="Logo de Uncut Studio" />
+        <p>Built sharp. Shipped simple.</p>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Valores del estudio">
+      <div class="ticker-track">
+        <span>Simple tools</span>
+        <span>Native feel</span>
+        <span>Privacy first</span>
+        <span>No noise</span>
+        <span>Fast launches</span>
+        <span>Useful by design</span>
+      </div>
+    </section>
+
+    <section class="section work" id="work" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Apps</p>
+        <h2>Productos pequeños con intención.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div>
+            <p class="tag">iPhone app</p>
+            <h3>Zero Migraine</h3>
+            <p>Registro minimalista de migrañas para entender patrones sin convertir cada síntoma en una tarea interminable.</p>
+          </div>
+          <a href="#contact" class="card-link">Más información →</a>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <p class="tag">Coming soon</p>
+            <h3>Watch widgets</h3>
+            <p>Extensiones rápidas para registrar datos desde la pantalla que ya tienes delante.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <p class="tag">Lab</p>
+            <h3>Small utilities</h3>
+            <p>Experimentos, prototipos y herramientas móviles diseñadas para resolver una cosa muy bien.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="studio" data-section>
+      <div>
+        <p class="eyebrow">Studio</p>
+        <h2>Uncut significa directo.</h2>
+      </div>
+      <div class="split-copy">
+        <p>
+          Nada de pantallas infinitas, formularios eternos o productos cargados de capas innecesarias.
+          Diseñamos apps que entran rápido en la vida real: abrir, usar, cerrar, seguir.
+        </p>
+        <p>
+          La estética es sobria, el código tiene que aguantar y cada decisión debe justificar su sitio.
+        </p>
+      </div>
+    </section>
+
+    <section class="section process" id="process" data-section>
+      <div class="section-heading">
+        <p class="eyebrow">Proceso</p>
+        <h2>De idea a app sin perder el filo.</h2>
+      </div>
+
+      <div class="steps">
+        <article>
+          <span>01</span>
+          <h3>Idea</h3>
+          <p>Reducimos el producto a su función principal y eliminamos lo que distrae.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Diseño</h3>
+          <p>Interfaces limpias, jerarquía clara y una experiencia pensada para móvil.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Build</h3>
+          <p>Desarrollo rápido, pruebas reales y publicación cuidada en tiendas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" data-section>
+      <div class="contact-card">
+        <p class="eyebrow">Contacto</p>
+        <h2>¿Tienes una app en mente?</h2>
+        <p>Escríbeme para hablar de apps, prototipos, colaboraciones o proyectos raros que merezcan existir.</p>
+        <a class="button primary" href="mailto:hola@uncutstudio.com">hola@uncutstudio.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Uncut Studio</p>
+    <button class="theme-toggle" type="button" aria-label="Cambiar tema">Invertir contraste</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
