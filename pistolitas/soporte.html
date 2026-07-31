@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soporte · Pistolitas</title>
+<meta name="description" content="Ayuda y contacto de Pistolitas, el shooter de hordas ambientado en Madrid.">
+<meta name="color-scheme" content="dark light">
+<style>
+  :root{
+    --bg:#0b0610; --bg2:#160c22; --panel:#1a1128; --line:#33224a;
+    --ink:#f4f1ee; --dim:#a99fb8; --gold:#ffc63d; --red:#f23b52; --cyan:#4ce0f2;
+    --radius:16px;
+  }
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{overflow-wrap:anywhere}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background-image:radial-gradient(120% 70% at 50% -10%, #3a1338 0%, transparent 60%);
+    background-repeat:no-repeat;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:32px 20px 72px}
+  header{text-align:center; padding:24px 0 8px}
+  .logo{width:88px;height:88px;display:block;margin:0 auto 14px;border-radius:20px}
+  h1{
+    margin:0; font-size:clamp(38px,10vw,64px); letter-spacing:.02em; color:var(--gold);
+    font-family:Impact,"Arial Black","Helvetica Neue",sans-serif; font-weight:900;
+    text-transform:uppercase; line-height:1;
+  }
+  .sub{margin:8px 0 0; color:var(--red); font-weight:800; letter-spacing:.14em; text-transform:uppercase; font-size:14px}
+  h2{
+    margin:40px 0 12px; font-size:22px; color:var(--ink);
+    border-bottom:2px solid var(--line); padding-bottom:8px;
+  }
+  h3{margin:24px 0 6px; font-size:17px; color:var(--gold)}
+  p{margin:10px 0}
+  a{color:var(--cyan)}
+  a:hover{color:#fff}
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px; margin:22px 0;
+  }
+  .contact{text-align:center; border-color:var(--gold)}
+  .mail{
+    display:inline-block; margin-top:6px; font-size:clamp(18px,5vw,24px); font-weight:800;
+    color:var(--gold); text-decoration:none; word-break:break-all;
+  }
+  .mail:hover{text-decoration:underline; color:#fff}
+  .muted{color:var(--dim); font-size:14px}
+  ul{padding-left:20px; margin:10px 0}
+  li{margin:6px 0}
+  .kbd{
+    background:#241634; border:1px solid var(--line); border-radius:6px;
+    padding:1px 7px; font-size:14px; white-space:nowrap;
+  }
+  footer{
+    margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
+    color:var(--dim); font-size:14px; text-align:center;
+  }
+  footer a{margin:0 8px; display:inline-block}
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f6f3f8; --bg2:#fff; --panel:#fff; --line:#e0d8ea;
+      --ink:#1b1224; --dim:#5f5570; --gold:#b8730a; --red:#c22138; --cyan:#0a6f80;
+    }
+    body{background-image:radial-gradient(120% 70% at 50% -10%, #efe0f2 0%, transparent 60%)}
+    .kbd{background:#f0eaf6}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <svg class="logo" viewBox="0 0 256 256" role="img" aria-label="Pistolitas">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2a1038"/><stop offset="1" stop-color="#0b0610"/>
+        </linearGradient>
+        <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#e8991b"/>
+        </linearGradient>
+      </defs>
+      <rect width="256" height="256" rx="52" fill="url(#bg)"/>
+      <g fill="#3b2450">
+        <rect x="16" y="150" width="30" height="70"/><rect x="52" y="126" width="26" height="94"/>
+        <rect x="84" y="160" width="22" height="60"/><rect x="150" y="140" width="26" height="80"/>
+        <rect x="182" y="112" width="24" height="108"/><rect x="212" y="152" width="28" height="68"/>
+      </g>
+      <rect x="0" y="214" width="256" height="42" fill="#160a20"/>
+      <rect x="0" y="212" width="256" height="5" fill="#ff8a2b"/>
+      <g transform="translate(34 66) rotate(-8)">
+        <rect x="0" y="26" width="126" height="30" rx="8" fill="url(#gold)"/>
+        <rect x="106" y="34" width="44" height="14" rx="7" fill="url(#gold)"/>
+        <rect x="18" y="52" width="34" height="56" rx="10" fill="url(#gold)"/>
+        <circle cx="158" cy="41" r="14" fill="#fff3c4"/>
+      </g>
+      <g transform="translate(200 70)">
+        <circle cx="0" cy="0" r="13" fill="#f2374f"/>
+        <circle cx="-9" cy="7" r="9" fill="#d81f3a"/><circle cx="9" cy="7" r="9" fill="#ff5470"/>
+      </g>
+    </svg>
+    <h1>Pistolitas</h1>
+    <p class="sub">Soporte</p>
+  </header>
+
+  <div class="card contact">
+    <p style="margin:0"><strong>¿Algo no va bien? Escríbenos.</strong></p>
+    <a class="mail" href="mailto:logikorz@gmail.com?subject=Soporte%20Pistolitas">logikorz@gmail.com</a>
+    <p class="muted" style="margin:12px 0 0">Contestamos en español y en inglés. Solemos tardar un par de días.</p>
+  </div>
+
+  <p>Pistolitas es un juego de acción para móvil: hordas de enemigos en el Madrid
+  más castizo. Funciona <strong>sin conexión</strong>, no tiene cuentas ni
+  registro, y tu partida se guarda solo en tu dispositivo.</p>
+
+  <h2>Preguntas frecuentes</h2>
+
+  <h3>¿Necesito internet para jugar?</h3>
+  <p>No. El juego entero funciona sin conexión. Solo se usa internet para cargar
+  el anuncio opcional de revivir; si no hay red, ese anuncio simplemente no
+  aparece y puedes seguir jugando igual.</p>
+
+  <h3>He perdido mi progreso</h3>
+  <p>La partida se guarda <strong>únicamente en el dispositivo</strong>: no hay
+  copia en la nube ni cuenta que restaurar. Si desinstalas la app o cambias de
+  móvil, el progreso no viaja contigo. Es el precio de no pedirte ningún dato.</p>
+
+  <h3>¿Cómo borro mis datos?</h3>
+  <p>Desinstalando la app se borra todo lo que el juego guarda. Si solo quieres
+  empezar de cero sin desinstalar: <span class="kbd">Ajustes</span> →
+  <span class="kbd">Borrar progreso</span> (hay que pulsar dos veces para
+  confirmar).</p>
+
+  <h3>Va a tirones o se calienta el móvil</h3>
+  <p>En <span class="kbd">Ajustes</span> → <span class="kbd">Calidad gráfica</span>
+  puedes bajar de <em>AUTO</em> a <em>MEDIA</em> o <em>BAJA</em>. En BAJA se
+  reduce la resolución de render y se apagan los brillos: el juego se ve algo
+  más simple pero va notablemente más suelto.</p>
+
+  <h3>No me gustan los controles</h3>
+  <ul>
+    <li>El <strong>stick izquierdo</strong> mueve; aparece donde pongas el pulgar.</li>
+    <li>El <strong>stick derecho</strong> apunta <em>y dispara</em> mientras lo mantienes.</li>
+    <li>La cámara no gira nunca: la misma inclinación del stick va siempre a la misma dirección.</li>
+    <li>Si prefieres no ocuparte de apuntar, activa
+      <span class="kbd">Disparo automático</span> en Ajustes: el personaje
+      dispara solo al enemigo más cercano.</li>
+    <li>También puedes ajustar la <span class="kbd">Ayuda de puntería</span> y el
+      <span class="kbd">Temblor de cámara</span>.</li>
+  </ul>
+
+  <h3>¿Por qué hay anuncios?</h3>
+  <p>Hay <strong>uno solo, y es voluntario</strong>: cuando mueres, el juego te
+  ofrece revivir a cambio de ver un anuncio. Puedes decir que no y no pasa nada.
+  Nunca se interrumpe una partida con publicidad.</p>
+
+  <h3>Quiero cambiar mis opciones de publicidad</h3>
+  <p>Si estás en la Unión Europea, en <span class="kbd">Ajustes</span> aparece
+  <span class="kbd">Privacidad y anuncios</span> para volver a abrir el
+  formulario de consentimiento. Además, en el móvil puedes limitar la
+  publicidad personalizada en <em>Ajustes de iOS → Privacidad y seguridad →
+  Seguimiento</em>.</p>
+
+  <h3>El sonido no se oye</h3>
+  <p>Revisa el interruptor de silencio del móvil y los volúmenes de
+  <span class="kbd">Música</span> y <span class="kbd">Efectos</span> en Ajustes.</p>
+
+  <h3>He encontrado un fallo</h3>
+  <p>Escríbenos y cuéntanos qué pasó. Nos ayuda muchísimo si incluyes:</p>
+  <ul>
+    <li>modelo de móvil y versión de iOS;</li>
+    <li>qué estabas haciendo (oleada, arma, personaje);</li>
+    <li>si se puede repetir, cómo.</li>
+  </ul>
+
+  <h2>Privacidad</h2>
+  <p>El juego no recopila datos personales. Los detalles, incluido qué recoge el
+  proveedor de publicidad, están en la
+  <a href="privacidad.html">política de privacidad</a>.</p>
+
+  <footer>
+    <p>Pistolitas · versión 1.0.0</p>
+    <p>
+      <a href="index.html">Inicio</a>·
+      <a href="privacidad.html">Privacidad</a>·
+      <a href="mailto:CAMBIA_ESTO@tucorreo.com">Contacto</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

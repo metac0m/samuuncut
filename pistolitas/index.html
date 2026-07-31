@@ -1,1 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pistolitas · Madrid está fatal</title>
+<meta name="description" content="Shooter de hordas en tercera persona ambientado en Madrid. Sin internet, sin cuentas.">
+<meta name="color-scheme" content="dark light">
+<style>
+  :root{
+    --bg:#0b0610; --panel:#1a1128; --line:#33224a;
+    --ink:#f4f1ee; --dim:#a99fb8; --gold:#ffc63d; --red:#f23b52; --cyan:#4ce0f2;
+  }
+  *{box-sizing:border-box}
+  html,body{overflow-x:hidden}
+  body{overflow-wrap:anywhere}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink); text-align:center;
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background-image:radial-gradient(120% 70% at 50% -5%, #4a1442 0%, transparent 62%);
+    background-repeat:no-repeat;
+    min-height:100vh; display:flex; align-items:center; justify-content:center;
+  }
+  .wrap{max-width:640px; padding:48px 20px}
+  .logo{width:120px;height:120px;display:block;margin:0 auto 20px;border-radius:26px}
+  h1{
+    margin:0; font-size:clamp(44px,13vw,84px); color:var(--gold); line-height:.95;
+    font-family:Impact,"Arial Black","Helvetica Neue",sans-serif; font-weight:900;
+    text-transform:uppercase; letter-spacing:.02em;
+  }
+  .sub{margin:10px 0 0; color:var(--red); font-weight:800; letter-spacing:.16em; text-transform:uppercase; font-size:clamp(13px,3.4vw,17px)}
+  .pitch{margin:26px auto 0; max-width:520px; color:var(--dim)}
+  .links{display:flex; gap:12px; justify-content:center; margin-top:34px; flex-wrap:wrap}
+  .links a{
+    border:2px solid var(--line); border-radius:12px; padding:12px 22px;
+    text-decoration:none; color:var(--ink); font-weight:800; letter-spacing:.04em;
+    text-transform:uppercase; font-size:15px;
+  }
+  .links a:hover{border-color:var(--gold); color:var(--gold)}
+  footer{margin-top:40px; color:var(--dim); font-size:13px}
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f6f3f8; --panel:#fff; --line:#ddd3ea;
+      --ink:#1b1224; --dim:#5f5570; --gold:#b8730a; --red:#c22138; --cyan:#0a6f80;
+    }
+    body{background-image:radial-gradient(120% 70% at 50% -5%, #f0dff3 0%, transparent 62%)}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <svg class="logo" viewBox="0 0 256 256" role="img" aria-label="Pistolitas">
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#2a1038"/><stop offset="1" stop-color="#0b0610"/>
+      </linearGradient>
+      <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#e8991b"/>
+      </linearGradient>
+    </defs>
+    <rect width="256" height="256" rx="52" fill="url(#bg)"/>
+    <g fill="#3b2450">
+      <rect x="16" y="150" width="30" height="70"/><rect x="52" y="126" width="26" height="94"/>
+      <rect x="84" y="160" width="22" height="60"/><rect x="150" y="140" width="26" height="80"/>
+      <rect x="182" y="112" width="24" height="108"/><rect x="212" y="152" width="28" height="68"/>
+    </g>
+    <g fill="#ffb347">
+      <rect x="22" y="160" width="7" height="9"/><rect x="34" y="160" width="7" height="9"/>
+      <rect x="58" y="138" width="7" height="9"/><rect x="68" y="138" width="7" height="9"/>
+      <rect x="188" y="124" width="7" height="9"/><rect x="198" y="124" width="7" height="9"/>
+    </g>
+    <rect x="0" y="214" width="256" height="42" fill="#160a20"/>
+    <rect x="0" y="212" width="256" height="5" fill="#ff8a2b"/>
+    <g transform="translate(34 66) rotate(-8)">
+      <rect x="0" y="26" width="126" height="30" rx="8" fill="url(#gold)"/>
+      <rect x="106" y="34" width="44" height="14" rx="7" fill="url(#gold)"/>
+      <rect x="18" y="52" width="34" height="56" rx="10" fill="url(#gold)"/>
+      <circle cx="158" cy="41" r="14" fill="#fff3c4"/>
+    </g>
+    <g transform="translate(200 70)">
+      <circle cx="0" cy="0" r="13" fill="#f2374f"/>
+      <circle cx="-9" cy="7" r="9" fill="#d81f3a"/><circle cx="9" cy="7" r="9" fill="#ff5470"/>
+    </g>
+  </svg>
 
+  <h1>Pistolitas</h1>
+  <p class="sub">Madrid está fatal</p>
+
+  <p class="pitch">Hordas de guiris, palomas mutantes y jabalíes de la M-30.
+  Seis barrios, cinco jefazos y esa sensación de "una más y lo dejo".
+  Sin internet, sin cuentas y sin registros.</p>
+
+  <nav class="links">
+    <a href="soporte.html">Soporte</a>
+    <a href="privacidad.html">Privacidad</a>
+  </nav>
+
+  <footer>Pistolitas · versión 1.0.0</footer>
+</div>
+</body>
+</html>
